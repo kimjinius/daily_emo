@@ -11,3 +11,5 @@
 > 5. 지금까지 저장한 기분을 한 눈에 볼 수 있음
 
 ### 개발환경
+> <img src="https://img.shields.io/badge/Android-74DF00?style=flat-square&logo=Android&logoColor=white"/></a>
+> <img src="https://img.shields.io/badge/Kotlin-0095D5?style=flat-square&logo=Kotlin&logoColor=white"/></a>
