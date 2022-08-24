@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="300dp"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btncan"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_baseline_close_24"
+            android:textSize="20dp"
+            ></Button>
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:background="@drawable/ic_baseline_delete_outline_24"
+            android:id="@+id/trash"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src = "@drawable/happy"
+            android:padding="5dp"/>
+
+        <Button
+            android:id="@+id/btnok"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/ic_baseline_check_24"
+            android:textSize="20dp"></Button>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="날짜"
+        android:textSize="20sp"/>
+
+    <RadioGroup
+        android:id="@+id/rgEmo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbEmo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/emo1" />
+
+        <RadioButton
+            android:id="@+id/rbEmo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/emo2" />
+
+        <RadioButton
+            android:id="@+id/rbEmo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/emo3" />
+
+        <RadioButton
+            android:id="@+id/rbEmo4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/emo4" />
+
+        <RadioButton
+            android:id="@+id/rbEmo5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/emo5" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editMemo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:hint="메모"
+        android:privateImeOptions="defaultInputmode=korean"/>
+
+
+</LinearLayout>

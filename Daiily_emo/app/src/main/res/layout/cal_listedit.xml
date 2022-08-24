@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="500dp"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/btncan"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_baseline_close_24"
+            android:textSize="20dp"
+            ></Button>
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:background="@drawable/ic_baseline_delete_outline_24"
+            android:id="@+id/trash"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:src="@drawable/good"
+            android:layout_height="30dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnok"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/ic_baseline_check_24"
+            android:textSize="20dp"></Button>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/mod_editTitle"
+        android:layout_width="179dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="32dp"
+        android:hint="제목"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgv2"
+        android:layout_width="39dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:clickable="false"
+        android:src="@android:drawable/ic_dialog_map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_moddate" />
+
+    <EditText
+        android:id="@+id/edt_modwhere"
+        android:layout_width="179dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="4dp"
+        android:hint="장소"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgv2" />
+
+    <TextView
+        android:id="@+id/mod_when"
+        android:layout_width="37dp"
+        android:layout_height="27dp"
+        android:background="@color/white"
+        android:text="기간 : "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mod_editTitle"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <TextView
+        android:id="@+id/mod_memo"
+        android:layout_width="37dp"
+        android:layout_height="31dp"
+        android:background="@color/white"
+        android:text="메모"
+        app:layout_constraintBottom_toTopOf="@+id/mod_edt_memo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_modwhere"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <EditText
+        android:id="@+id/mod_edt_memo"
+        android:layout_width="281dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="48dp"
+        android:hint="메모"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_moddate"
+        android:layout_width="96dp"
+        android:layout_height="60dp"
+        android:src="@android:drawable/ic_menu_month"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mod_when" />
+
+    <TextView
+        android:id="@+id/tv_date2"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:background="@color/white"
+        android:text="날짜 미선택"
+        app:layout_constraintBottom_toBottomOf="@+id/add_when"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/mod_when"
+        app:layout_constraintTop_toTopOf="@+id/mod_when" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

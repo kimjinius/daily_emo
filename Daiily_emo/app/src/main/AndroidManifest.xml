@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.daiily_emo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CalTodo"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"/>
+
+        <activity
+            android:name=".CalAdd"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"/>
+        <activity
+            android:name=".CalSelectDate"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"/>
+        <activity
+            android:name=".CalEdit"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"/>
+        <activity
+            android:name=".TodoAdd"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"/>
+        <activity
+            android:name=".TodoEdit"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"/>
+        <activity
+            android:name=".EmoAdd"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"/>
+        <activity
+            android:name=".EmoEdit"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"/>
+    </application>
+
+</manifest>

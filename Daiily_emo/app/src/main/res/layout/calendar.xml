@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <ImageView
+        android:padding="9dp"
+        android:src="@drawable/good"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center"/>
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:orientation="horizontal"
+        app:mcv_calendarMode="month"
+        app:mcv_tileSize="match_parent"
+        app:mcv_titleAnimationOrientation="horizontal"
+        app:mcv_weekDayTextAppearance="@style/TextAppearance.AppCompat.Small" />
+
+
+</LinearLayout>
